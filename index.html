@@ -347,22 +347,10 @@
     <img src="images/豆腐2025生日.png" alt="豆腐2025生日" class="image-content">
 </div>
     
-   <!-- 背景音乐 -->
-<audio id="bgMusic" loop preload="auto">
-    <!-- 使用简化后的音乐文件名 -->
-    <source src="music/song.mp3" type="audio/mpeg">
-    
-    <!-- 后备内容 -->
-    <div class="audio-fallback">
-        <p><i class="fas fa-exclamation-triangle"></i> 抱歉，您的浏览器不支持背景音乐</p>
-        <p>为了获得完整体验，请使用现代浏览器访问</p>
-        <a href="music/song.mp3" 
-           class="download-link" 
-           download="生日音乐.mp3">
-            <i class="fas fa-download"></i> 下载生日音乐
-        </a>
-    </div>
+<audio id="bgMusic" loop autoplay>
+    <source src="music/Song.mp3" type="audio/mpeg">
 </audio>
+<script>document.getElementById('bgMusic').volume = 0.7;</script>
     
     <script>
         // 获取DOM元素
